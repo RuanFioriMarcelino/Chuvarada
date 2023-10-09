@@ -21,48 +21,34 @@ def jogar():
 
     while (not ganhou and not perdeu and not velha): 
 
-        if(ordem ==0): 
+        if(ordem == 0):
 
-            print("SUA VEZ!") 
+            print("Próxima vez!")
 
-            linha = int(input("Insira o numero da linha")) 
-
-            coluna = int(input("Insira o numero da coluna")) 
-
+            linha = int(input("Número da linha")) 
+            coluna = int(input("Número da coluna"))
             posicoes[linha][coluna] = ("X") 
-
-            for n in range(0, 3): 
-
+            for n in range(0, 3):
                 print(posicoes[n]) 
-
             ordem = ordem + 1 
-
             print("\n") 
 
         else: 
 
-            print("SUA VEZ!") 
+            print("Próxima vez!") 
 
-            linha = int(input("Insira o numero da linha")) 
-
-            coluna = int(input("Insira o numero da coluna")) 
-
+            linha = int(input("Número da linha")) 
+            coluna = int(input("Núero da coluna")) 
             posicoes[linha][coluna] = ("O") 
-
             for n in range(0, 3): 
-
                 print(posicoes[n]) 
-
             ordem = ordem - 1 
-
             print("\n") 
 
 
 def iniciou(): 
   print("Bem vindo ao jogo da velha!!!\n") 
   pgt=input("Pressione 'F' para inicar o Jogo \nDigite 'Sair' para encerrar\n").upper()
-
-
  
 
 def possiveis(): 
